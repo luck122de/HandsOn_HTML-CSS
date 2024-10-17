@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS Quize</title>
+    <link rel="styleSheet" href="index.css">
+</head>
+<body>
+        <header>
+            <div class="header">
+             <p class="free">freeCodeCamp()</p>
+             <h1>Html/css Quiz</h1>
+              <nav>
+                <ul>
+                    <li><a href="#Student-info">INFO</a></li>
+                    <li><a href="#html">HTML</a></li>
+                     <li><a href="#CSS">CSS</a></li>
+                </ul>
+              </nav>
+            </div>
+        </header>
+
+        <!-- form page start from here -->
+         <form action="" method="post">
+
+ <!-- Student information        -->
+            <section role="region" aria-labelledby="Student_Info">
+                <h2 id="Student-info">Student Info</h2>
+                <div class="info">
+                    <label for="Student-name">Name:</label>
+                    <input type="text" id="Student-info" name="student-info"/>
+                </div>
+
+                <div class="info">
+                    <label for="email">Email:</label>
+                    <input type="email" id="Email" name="Email"/>
+                </div>
+
+                <div class="info">
+                    <label for="birth-date">Date Of Birth:</label>
+                    <input type="date" id="birth-date" name="birth-date"/>
+                </div>
+             </section>
+
+ <!-- html question -->
+             <section role="region" aria-labelledby="html-questions">
+                <h2 id="html">HTML</h2>
+                <div class="Question-block">
+                    <h3>Question #1</h3>
+                    <fieldset id="question" name="html-question-one">
+                        <legend>The legend element represents a caption for the content of its parent fieldset element
+                        </legend>
+                        <ul class="answer-list">
+                         <li><label for="q-1" id="ques">
+                            <input id="q1-a1" type="radio" name="q1"/>True
+                          </label>
+                        </li>
+                        <li>
+                        <label for="q-1" id="ques">
+                            <input id="q1-a2" type="radio" name="q1"/>False
+                        </li>
+                           </ul>
+                         </fieldset>
+                          </div>
+
+<!-- html 2nd question -->
+                 <div class="Question-block">
+                    <h3>Question #2</h3>
+                <fieldset id="question" name="html-question-two">
+                    <legend>
+                        A label element nesting an input element is required to have a for attribute with the same value as the input's id
+                    </legend>
+                <ul class="answer-list">
+                 <li>
+                    <label for="q2-a1" id="ques">
+                        <input id="q2-a2" name="q2" type="radio" value="true">True
+                        </label>
+                    </li>
+                    <li>
+                        <label for="q2-a2" id="ques">
+                          <input id="q2-a2" name="q2" type="radio" value="false">False
+                        </label>
+                    </li>
+                </ul>
+                 </fieldset>
+                  </div>
+                   </section>
+
+
+<!-- CSS question -->
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="CSS">CSS</h2>
+                <div class="formrow">
+<!-- dropdown question -->
+                <div class="question">
+                    <legend>Can the CSS margin property accept negative values?</legend>
+                </div>
+                <div class="answer">
+                    <select id="selector">
+                        <option value="">Select an Option</option> 
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>                   
+                    </select>
+                </div>
+<!-- text answer question -->
+                <div class="quetsion">
+                 <legend>Do you have any questions:</legend>
+                </div>
+                <div class="answer">
+                    <textarea id="text-answer" rows="6" cols="24"></textarea>
+                </div>
+                    </div>
+                </section>
+<!-- submit button -->
+    <button type="submit">Submit</button>
+</form>
+<footer>
+    <address>
+        <a href="">freeCodeCamp</a><br>
+          <p>San Francisco<br>
+          California<br>
+          USA</p>
+    </address>
+</footer>
+</body>
+</html>
